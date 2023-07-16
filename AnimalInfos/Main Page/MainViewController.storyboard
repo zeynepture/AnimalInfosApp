@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="Y6W-OH-hqX" customClass="MainViewController" customModule="AnimalInfos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="1100"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gc7-IC-U5A">
+                                <rect key="frame" x="0.0" y="59" width="393" height="1007"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h9M-uQ-aDy" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1000"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mAV-bR-NZ5" userLabel="Cheetah View" customClass="BoxView" customModule="AnimalInfos" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="85" width="170" height="180"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cheetah " translatesAutoresizingMaskIntoConstraints="NO" id="YZX-TM-ipp" userLabel="Cheetah Image">
+                                                        <rect key="frame" x="0.0" y="0.0" width="170" height="180"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cheetah" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="62q-Ga-5ej">
+                                                        <rect key="frame" x="0.0" y="0.0" width="170" height="21"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="21" id="SXR-Gs-gUX"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="13"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <size key="shadowOffset" width="1" height="-1"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="62q-Ga-5ej" firstAttribute="leading" secondItem="mAV-bR-NZ5" secondAttribute="leading" id="1Kt-Zq-qZX"/>
+                                                    <constraint firstItem="YZX-TM-ipp" firstAttribute="leading" secondItem="mAV-bR-NZ5" secondAttribute="leading" id="5oO-8I-2Cp"/>
+                                                    <constraint firstAttribute="bottom" secondItem="YZX-TM-ipp" secondAttribute="bottom" id="GaS-dt-onZ"/>
+                                                    <constraint firstItem="62q-Ga-5ej" firstAttribute="top" secondItem="mAV-bR-NZ5" secondAttribute="top" id="Lod-mo-R5B"/>
+                                                    <constraint firstAttribute="height" constant="180" id="PZa-Hh-NyM" userLabel="height = 200"/>
+                                                    <constraint firstItem="YZX-TM-ipp" firstAttribute="top" secondItem="mAV-bR-NZ5" secondAttribute="top" id="UWC-F6-X4I"/>
+                                                    <constraint firstAttribute="trailing" secondItem="YZX-TM-ipp" secondAttribute="trailing" id="aKO-vu-YFp"/>
+                                                    <constraint firstAttribute="width" constant="170" id="mpr-qJ-Gb7" userLabel="width = 180"/>
+                                                    <constraint firstAttribute="trailing" secondItem="62q-Ga-5ej" secondAttribute="trailing" id="vGI-sj-Ac1"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5GK-zY-QgK" userLabel="Elephant View" customClass="BoxView" customModule="AnimalInfos" customModuleProvider="target">
+                                                <rect key="frame" x="203" y="85" width="170" height="180"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="elephant" translatesAutoresizingMaskIntoConstraints="NO" id="q4E-I9-X5W" userLabel="Elephant image">
+                                                        <rect key="frame" x="0.0" y="0.0" width="170" height="180"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elephant" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Av9-XH-c0D">
+                                                        <rect key="frame" x="0.0" y="0.0" width="170" height="21"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="170" id="3IA-5a-ntZ"/>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="Wc1-m5-75t"/>
+                                                            <constraint firstAttribute="height" constant="21" id="vVI-5c-J7T"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="13"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <size key="shadowOffset" width="1" height="-1"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="q4E-I9-X5W" firstAttribute="top" secondItem="5GK-zY-QgK" secondAttribute="top" id="Acf-CS-Bhy"/>
+                                                    <constraint firstAttribute="bottom" secondItem="q4E-I9-X5W" secondAttribute="bottom" id="BA1-eT-z5Q"/>
+                                                    <constraint firstItem="Av9-XH-c0D" firstAttribute="leading" secondItem="5GK-zY-QgK" secondAttribute="leading" id="QQp-WG-pFM"/>
+                                                    <constraint firstItem="q4E-I9-X5W" firstAttribute="leading" secondItem="5GK-zY-QgK" secondAttribute="leading" id="RZU-PH-IRc"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Av9-XH-c0D" secondAttribute="trailing" id="Yty-LX-rPB"/>
+                                                    <constraint firstAttribute="width" constant="170" id="eMp-Ra-K0b" userLabel="width = 180"/>
+                                                    <constraint firstAttribute="trailing" secondItem="q4E-I9-X5W" secondAttribute="trailing" id="geV-2F-YH8"/>
+                                                    <constraint firstItem="Av9-XH-c0D" firstAttribute="top" secondItem="5GK-zY-QgK" secondAttribute="top" id="pQY-Ip-WaQ"/>
+                                                    <constraint firstAttribute="height" constant="180" id="qpM-5t-hMb" userLabel="height = 200"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gln-dE-ycr" userLabel="Giraffe View" customClass="BoxView" customModule="AnimalInfos" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="273" width="170" height="180"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="giraffe" translatesAutoresizingMaskIntoConstraints="NO" id="nMe-4E-jZh" userLabel="Giraffe image">
+                                                        <rect key="frame" x="0.0" y="0.0" width="170" height="180"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Giraffe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFP-Lz-582">
+                                                        <rect key="frame" x="0.0" y="0.0" width="170" height="21"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="RC4-Cu-3EZ"/>
+                                                            <constraint firstAttribute="width" constant="170" id="uun-D7-uGp"/>
+                                                            <constraint firstAttribute="height" constant="21" id="viX-kx-dOc"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="13"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <size key="shadowOffset" width="1" height="-1"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="180" id="4io-Gd-9JX" userLabel="height = 200"/>
+                                                    <constraint firstAttribute="width" constant="170" id="78v-jl-m3u" userLabel="width = 180"/>
+                                                    <constraint firstAttribute="trailing" secondItem="EFP-Lz-582" secondAttribute="trailing" id="8CD-Yg-VIK"/>
+                                                    <constraint firstItem="nMe-4E-jZh" firstAttribute="top" secondItem="gln-dE-ycr" secondAttribute="top" id="L5g-Yb-mge"/>
+                                                    <constraint firstItem="EFP-Lz-582" firstAttribute="top" secondItem="gln-dE-ycr" secondAttribute="top" id="NjU-hg-tw0"/>
+                                                    <constraint firstItem="EFP-Lz-582" firstAttribute="leading" secondItem="gln-dE-ycr" secondAttribute="leading" id="OCm-w0-8UH"/>
+                                                    <constraint firstItem="nMe-4E-jZh" firstAttribute="leading" secondItem="gln-dE-ycr" secondAttribute="leading" id="RAF-kj-m80"/>
+                                                    <constraint firstAttribute="trailing" secondItem="nMe-4E-jZh" secondAttribute="trailing" id="glQ-EL-ONm"/>
+                                                    <constraint firstAttribute="bottom" secondItem="nMe-4E-jZh" secondAttribute="bottom" id="hdy-65-WVW"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qnh-Kn-7If" userLabel="Gorilla View" customClass="BoxView" customModule="AnimalInfos" customModuleProvider="target">
+                                                <rect key="frame" x="203" y="273" width="170" height="180"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gorilla" translatesAutoresizingMaskIntoConstraints="NO" id="2bd-6z-6BX" userLabel="Gorilla image">
+                                                        <rect key="frame" x="0.0" y="0.0" width="170" height="180"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gorilla" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVH-3Y-emX">
+                                                        <rect key="frame" x="0.0" y="0.0" width="170" height="21"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="170" id="NAv-Ob-EGm"/>
+                                                            <constraint firstAttribute="height" constant="21" id="aha-T5-shJ"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="170" id="auv-On-yqd"/>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="dGf-nQ-GIX"/>
+                                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="21" id="v2v-KB-35G"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="13"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <size key="shadowOffset" width="1" height="-1"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="180" id="4kL-s2-mb3" userLabel="height = 200"/>
+                                                    <constraint firstItem="2bd-6z-6BX" firstAttribute="top" secondItem="Qnh-Kn-7If" secondAttribute="top" id="4sE-Nn-bdT"/>
+                                                    <constraint firstItem="2bd-6z-6BX" firstAttribute="leading" secondItem="Qnh-Kn-7If" secondAttribute="leading" id="Fqt-5U-zRL"/>
+                                                    <constraint firstItem="VVH-3Y-emX" firstAttribute="top" secondItem="Qnh-Kn-7If" secondAttribute="top" id="HoI-Yp-esh"/>
+                                                    <constraint firstItem="VVH-3Y-emX" firstAttribute="leading" secondItem="Qnh-Kn-7If" secondAttribute="leading" id="Iim-ez-7ht"/>
+                                                    <constraint firstAttribute="bottom" secondItem="2bd-6z-6BX" secondAttribute="bottom" id="OFn-Cv-00i"/>
+                                                    <constraint firstAttribute="width" constant="170" id="ekA-c9-HyE" userLabel="width = 180"/>
+                                                    <constraint firstAttribute="trailing" secondItem="2bd-6z-6BX" secondAttribute="trailing" id="fm4-xR-0Yg"/>
+                                                    <constraint firstAttribute="trailing" secondItem="VVH-3Y-emX" secondAttribute="trailing" id="ske-pt-797"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZG2-c4-53w" userLabel="Hippo View" customClass="BoxView" customModule="AnimalInfos" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="461" width="170" height="180"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hippo" translatesAutoresizingMaskIntoConstraints="NO" id="Pal-Or-qSK" userLabel="Hippo image">
+                                                        <rect key="frame" x="0.0" y="0.0" width="170" height="180"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hippopotamus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xxh-82-Od1">
+                                                        <rect key="frame" x="0.0" y="0.0" width="170" height="21"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="170" id="KTW-jS-lt9"/>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="haR-ke-812"/>
+                                                            <constraint firstAttribute="height" constant="21" id="lAK-LB-R9M"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="13"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <size key="shadowOffset" width="1" height="-1"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Xxh-82-Od1" firstAttribute="leading" secondItem="ZG2-c4-53w" secondAttribute="leading" id="3qc-FT-SGt"/>
+                                                    <constraint firstItem="Pal-Or-qSK" firstAttribute="leading" secondItem="ZG2-c4-53w" secondAttribute="leading" id="ECd-fX-o8R"/>
+                                                    <constraint firstItem="Pal-Or-qSK" firstAttribute="top" secondItem="ZG2-c4-53w" secondAttribute="top" id="EDp-ba-TY5"/>
+                                                    <constraint firstAttribute="height" constant="180" id="IaV-4v-RXI" userLabel="height = 200"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Pal-Or-qSK" secondAttribute="bottom" id="MPZ-X2-JuR"/>
+                                                    <constraint firstAttribute="width" constant="170" id="PDu-pI-c02" userLabel="width = 180"/>
+                                                    <constraint firstItem="Xxh-82-Od1" firstAttribute="top" secondItem="ZG2-c4-53w" secondAttribute="top" id="VaE-sc-nv3"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Pal-Or-qSK" secondAttribute="trailing" id="b9z-Lv-DeU"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Xxh-82-Od1" secondAttribute="trailing" id="pEj-xT-fhE"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NeD-uX-ucD" userLabel="Lion View" customClass="BoxView" customModule="AnimalInfos" customModuleProvider="target">
+                                                <rect key="frame" x="203" y="461" width="170" height="180"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lion" translatesAutoresizingMaskIntoConstraints="NO" id="VqW-WY-Mw8" userLabel="Lion image">
+                                                        <rect key="frame" x="0.0" y="0.0" width="170" height="180"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0z-Wy-2fp">
+                                                        <rect key="frame" x="0.0" y="0.0" width="170" height="21"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="WNR-eH-COy"/>
+                                                            <constraint firstAttribute="width" constant="170" id="pQ4-Ft-QRJ"/>
+                                                            <constraint firstAttribute="height" constant="21" id="wSE-0s-6Yw"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="13"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <size key="shadowOffset" width="1" height="-1"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="170" id="1c5-Eh-6TT" userLabel="width = 180"/>
+                                                    <constraint firstAttribute="height" constant="180" id="1qs-uU-xWG" userLabel="height = 200"/>
+                                                    <constraint firstItem="VqW-WY-Mw8" firstAttribute="top" secondItem="NeD-uX-ucD" secondAttribute="top" id="BOi-WB-JLg"/>
+                                                    <constraint firstAttribute="trailing" secondItem="K0z-Wy-2fp" secondAttribute="trailing" id="J2a-Pa-ylm"/>
+                                                    <constraint firstItem="K0z-Wy-2fp" firstAttribute="top" secondItem="NeD-uX-ucD" secondAttribute="top" id="TmR-bs-f20"/>
+                                                    <constraint firstAttribute="trailing" secondItem="VqW-WY-Mw8" secondAttribute="trailing" id="Wyq-Nw-vaa"/>
+                                                    <constraint firstItem="VqW-WY-Mw8" firstAttribute="leading" secondItem="NeD-uX-ucD" secondAttribute="leading" id="fJT-hz-Zy8"/>
+                                                    <constraint firstAttribute="bottom" secondItem="VqW-WY-Mw8" secondAttribute="bottom" id="kbU-vm-Ank"/>
+                                                    <constraint firstItem="K0z-Wy-2fp" firstAttribute="leading" secondItem="NeD-uX-ucD" secondAttribute="leading" id="o1n-zq-6HB"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQK-8E-rEb" userLabel="Ostrich View" customClass="BoxView" customModule="AnimalInfos" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="649" width="170" height="180"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ostrich" translatesAutoresizingMaskIntoConstraints="NO" id="K0K-aV-XzI" userLabel="Ostrich image">
+                                                        <rect key="frame" x="0.0" y="0.0" width="170" height="180"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Common Ostrich" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2T-r7-kRX">
+                                                        <rect key="frame" x="0.0" y="0.0" width="170" height="21"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="170" id="Ak0-FJ-zzE"/>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="XNa-uk-oWF"/>
+                                                            <constraint firstAttribute="height" constant="21" id="vMx-v5-vKN"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="13"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <size key="shadowOffset" width="1" height="-1"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="b2T-r7-kRX" firstAttribute="top" secondItem="IQK-8E-rEb" secondAttribute="top" id="9rE-Kb-a56"/>
+                                                    <constraint firstItem="b2T-r7-kRX" firstAttribute="leading" secondItem="IQK-8E-rEb" secondAttribute="leading" id="DRc-Qm-xOx"/>
+                                                    <constraint firstItem="K0K-aV-XzI" firstAttribute="leading" secondItem="IQK-8E-rEb" secondAttribute="leading" id="GTt-n8-VQL"/>
+                                                    <constraint firstItem="K0K-aV-XzI" firstAttribute="top" secondItem="IQK-8E-rEb" secondAttribute="top" id="LZx-gL-QFk"/>
+                                                    <constraint firstAttribute="trailing" secondItem="K0K-aV-XzI" secondAttribute="trailing" id="NE7-dL-BKf"/>
+                                                    <constraint firstAttribute="trailing" secondItem="b2T-r7-kRX" secondAttribute="trailing" id="kTj-gi-o9s"/>
+                                                    <constraint firstAttribute="bottom" secondItem="K0K-aV-XzI" secondAttribute="bottom" id="lIF-WN-DhO"/>
+                                                    <constraint firstAttribute="height" constant="180" id="q3f-53-emf" userLabel="height = 200"/>
+                                                    <constraint firstAttribute="width" constant="170" id="zEB-kX-A7K" userLabel="width = 180"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JMQ-8w-l5K" userLabel="Zebra View" customClass="BoxView" customModule="AnimalInfos" customModuleProvider="target">
+                                                <rect key="frame" x="203" y="649" width="170" height="180"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zebra" translatesAutoresizingMaskIntoConstraints="NO" id="7OB-vU-wGU" userLabel="Zebra image">
+                                                        <rect key="frame" x="0.0" y="0.0" width="170" height="180"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zebra" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9L-7e-ZVO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="170" height="21"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="21" id="GWk-LE-whx"/>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="RAV-bi-E0a"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="170" id="T4B-xe-kQ2"/>
+                                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="21" id="YtM-bY-YKv"/>
+                                                            <constraint firstAttribute="width" constant="170" id="hmR-6M-5r5"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="13"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <size key="shadowOffset" width="1" height="-1"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="7OB-vU-wGU" secondAttribute="bottom" id="Upc-qP-Ibp"/>
+                                                    <constraint firstItem="7OB-vU-wGU" firstAttribute="top" secondItem="JMQ-8w-l5K" secondAttribute="top" id="W64-Z5-fFy"/>
+                                                    <constraint firstAttribute="trailing" secondItem="z9L-7e-ZVO" secondAttribute="trailing" id="ZVW-71-4NP"/>
+                                                    <constraint firstItem="z9L-7e-ZVO" firstAttribute="top" secondItem="JMQ-8w-l5K" secondAttribute="top" id="c1w-Qg-5T9"/>
+                                                    <constraint firstItem="7OB-vU-wGU" firstAttribute="leading" secondItem="JMQ-8w-l5K" secondAttribute="leading" id="eL4-0S-YJh"/>
+                                                    <constraint firstAttribute="width" constant="170" id="ozK-8k-Erd" userLabel="width = 180"/>
+                                                    <constraint firstItem="z9L-7e-ZVO" firstAttribute="leading" secondItem="JMQ-8w-l5K" secondAttribute="leading" id="uG4-I1-kOs"/>
+                                                    <constraint firstAttribute="height" constant="180" id="w3t-xr-203" userLabel="height = 200"/>
+                                                    <constraint firstAttribute="trailing" secondItem="7OB-vU-wGU" secondAttribute="trailing" id="ynd-I7-Z02"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.88330614566802979" green="0.95389300584793091" blue="0.84604161977767944" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="ZG2-c4-53w" firstAttribute="top" secondItem="NeD-uX-ucD" secondAttribute="top" id="0tS-pO-3DX"/>
+                                            <constraint firstItem="5GK-zY-QgK" firstAttribute="top" secondItem="h9M-uQ-aDy" secondAttribute="top" constant="85" id="5xx-aK-r87"/>
+                                            <constraint firstItem="mAV-bR-NZ5" firstAttribute="leading" secondItem="h9M-uQ-aDy" secondAttribute="leading" constant="20" symbolic="YES" id="ANs-OK-azX"/>
+                                            <constraint firstItem="gln-dE-ycr" firstAttribute="top" secondItem="Qnh-Kn-7If" secondAttribute="top" id="CbT-7i-tzF"/>
+                                            <constraint firstItem="NeD-uX-ucD" firstAttribute="leading" secondItem="ZG2-c4-53w" secondAttribute="trailing" constant="13" id="EVD-9K-zGJ"/>
+                                            <constraint firstItem="gln-dE-ycr" firstAttribute="leading" secondItem="h9M-uQ-aDy" secondAttribute="leading" constant="20" symbolic="YES" id="FLb-hA-TAD"/>
+                                            <constraint firstItem="IQK-8E-rEb" firstAttribute="leading" secondItem="ZG2-c4-53w" secondAttribute="leading" id="GLS-pt-H1r"/>
+                                            <constraint firstItem="IQK-8E-rEb" firstAttribute="top" secondItem="ZG2-c4-53w" secondAttribute="bottom" constant="8" symbolic="YES" id="LPn-1V-5LZ"/>
+                                            <constraint firstItem="JMQ-8w-l5K" firstAttribute="leading" secondItem="IQK-8E-rEb" secondAttribute="trailing" constant="13" id="PiZ-St-Ymz"/>
+                                            <constraint firstItem="ZG2-c4-53w" firstAttribute="leading" secondItem="gln-dE-ycr" secondAttribute="leading" id="TiA-iN-dbe"/>
+                                            <constraint firstItem="gln-dE-ycr" firstAttribute="top" secondItem="mAV-bR-NZ5" secondAttribute="bottom" constant="8" symbolic="YES" id="aqi-mP-Qkg"/>
+                                            <constraint firstAttribute="trailing" secondItem="Qnh-Kn-7If" secondAttribute="trailing" constant="20" symbolic="YES" id="bzM-09-fVw"/>
+                                            <constraint firstItem="Qnh-Kn-7If" firstAttribute="leading" secondItem="gln-dE-ycr" secondAttribute="trailing" constant="13" id="dwR-Id-xke"/>
+                                            <constraint firstItem="ZG2-c4-53w" firstAttribute="top" secondItem="gln-dE-ycr" secondAttribute="bottom" constant="8" symbolic="YES" id="fAs-9J-0hf"/>
+                                            <constraint firstAttribute="trailing" secondItem="mAV-bR-NZ5" secondAttribute="trailing" constant="203" id="gJa-Oh-dR2"/>
+                                            <constraint firstAttribute="height" constant="1000" id="jF3-dt-Glj"/>
+                                            <constraint firstItem="mAV-bR-NZ5" firstAttribute="top" secondItem="h9M-uQ-aDy" secondAttribute="top" constant="85" id="m2R-8M-gHH"/>
+                                            <constraint firstItem="IQK-8E-rEb" firstAttribute="top" secondItem="JMQ-8w-l5K" secondAttribute="top" id="nST-Li-RlR"/>
+                                            <constraint firstItem="gln-dE-ycr" firstAttribute="leading" secondItem="h9M-uQ-aDy" secondAttribute="leading" constant="20" symbolic="YES" id="sBI-ql-QSV"/>
+                                            <constraint firstAttribute="trailing" secondItem="5GK-zY-QgK" secondAttribute="trailing" constant="20" symbolic="YES" id="vWS-vw-OnS"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="h9M-uQ-aDy" secondAttribute="trailing" id="Agg-jk-2f7"/>
+                                    <constraint firstItem="h9M-uQ-aDy" firstAttribute="leading" secondItem="gc7-IC-U5A" secondAttribute="leading" id="GpO-QL-CU3"/>
+                                    <constraint firstAttribute="bottom" secondItem="h9M-uQ-aDy" secondAttribute="bottom" constant="7" id="ggK-Mg-20M"/>
+                                    <constraint firstItem="h9M-uQ-aDy" firstAttribute="top" secondItem="gc7-IC-U5A" secondAttribute="top" id="uMO-pf-fBv"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                        <constraints>
+                            <constraint firstItem="h9M-uQ-aDy" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="4eA-qL-ZRM"/>
+                            <constraint firstItem="gc7-IC-U5A" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="876-Kj-8TC"/>
+                            <constraint firstItem="gc7-IC-U5A" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="87R-T3-XXb"/>
+                            <constraint firstItem="gc7-IC-U5A" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="o8V-jX-0t0"/>
+                            <constraint firstItem="gc7-IC-U5A" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="xZ3-g3-6Zn"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="393" height="1100"/>
+                    <connections>
+                        <outlet property="cheetahImage" destination="YZX-TM-ipp" id="V6O-I0-aHS"/>
+                        <outlet property="cheetahView" destination="mAV-bR-NZ5" id="OGT-Sc-1vu"/>
+                        <outlet property="elephantImage" destination="q4E-I9-X5W" id="3Wa-Nf-px7"/>
+                        <outlet property="elephantView" destination="5GK-zY-QgK" id="yOQ-RP-PMq"/>
+                        <outlet property="giraffeImage" destination="nMe-4E-jZh" id="5Tr-RE-jHm"/>
+                        <outlet property="giraffeView" destination="gln-dE-ycr" id="XH5-Ah-sog"/>
+                        <outlet property="gorillaImage" destination="2bd-6z-6BX" id="zJK-7g-lcD"/>
+                        <outlet property="gorillaView" destination="Qnh-Kn-7If" id="Tfe-fz-Jhk"/>
+                        <outlet property="hippoImage" destination="Pal-Or-qSK" id="CCK-LZ-GlX"/>
+                        <outlet property="hippoView" destination="ZG2-c4-53w" id="f2p-OO-Fm5"/>
+                        <outlet property="lionImage" destination="VqW-WY-Mw8" id="Z8n-as-YIK"/>
+                        <outlet property="lionView" destination="NeD-uX-ucD" id="1AS-em-8Xd"/>
+                        <outlet property="ostrichImage" destination="K0K-aV-XzI" id="kPE-nx-vsc"/>
+                        <outlet property="ostrichView" destination="IQK-8E-rEb" id="uT6-Yq-BFx"/>
+                        <outlet property="zebraImage" destination="7OB-vU-wGU" id="HDK-WW-1c2"/>
+                        <outlet property="zebraView" destination="JMQ-8w-l5K" id="cpJ-UV-eE8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-28.169014084507044"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cheetah " width="800" height="1200"/>
+        <image name="elephant" width="800" height="1200"/>
+        <image name="giraffe" width="800" height="1012"/>
+        <image name="gorilla" width="800" height="1204"/>
+        <image name="hippo" width="1280" height="853"/>
+        <image name="lion" width="1280" height="960"/>
+        <image name="ostrich" width="1280" height="854"/>
+        <image name="zebra" width="800" height="1200"/>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

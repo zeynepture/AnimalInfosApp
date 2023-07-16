@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BoxView" customModule="AnimalInfos" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="170" height="180"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jz-Z3-QNs">
+                    <rect key="frame" x="31" y="132" width="111" height="20"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" none="YES"/>
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="1mw-FI-nPW"/>
+                        <constraint firstAttribute="width" constant="111" id="MFa-qF-za8"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Watch Video">
+                        <backgroundConfiguration key="background">
+                            <color key="backgroundColor" red="0.88330614566802979" green="0.95389300584793091" blue="0.84604161977767944" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </backgroundConfiguration>
+                        <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                        <color key="baseForegroundColor" systemColor="systemPinkColor"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="watchVideoAct:" destination="-1" eventType="touchUpInside" id="8DU-MI-zM4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orH-CJ-I1V">
+                    <rect key="frame" x="35" y="155" width="103" height="20"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" none="YES"/>
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="pBd-IL-mdZ"/>
+                        <constraint firstAttribute="width" constant="103" id="uWR-bS-4qA"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Go to Link">
+                        <backgroundConfiguration key="background">
+                            <color key="backgroundColor" red="0.7889670729637146" green="0.84574109315872192" blue="0.94531041383743286" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </backgroundConfiguration>
+                        <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="gotoLinkAct:" destination="-1" eventType="touchUpInside" id="7a2-Jo-DrQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="orH-CJ-I1V" secondAttribute="trailing" constant="32" id="3N6-iH-JZs"/>
+                <constraint firstItem="orH-CJ-I1V" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="35" id="QPe-MB-91P"/>
+                <constraint firstItem="8jz-Z3-QNs" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="31" id="R7z-q8-6k6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8jz-Z3-QNs" secondAttribute="trailing" constant="28" id="TFh-Y1-DTV"/>
+                <constraint firstItem="orH-CJ-I1V" firstAttribute="top" secondItem="8jz-Z3-QNs" secondAttribute="bottom" constant="3" id="UWZ-7F-LYp"/>
+                <constraint firstAttribute="bottom" secondItem="orH-CJ-I1V" secondAttribute="bottom" constant="5" id="rJ6-Uq-syo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="128.24427480916029" y="-12.67605633802817"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
